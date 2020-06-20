@@ -4,6 +4,58 @@
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      @media(max-height: 900px){
+
+      }
+
+      section {
+        min-height: 100vh;
+      }
+
+      #welcome-section {
+        height: 100vh;
+        background-color: #222;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #welcome-section h1 {
+        font-size: 3rem;
+      }
+
+      #projects {
+        background-color: #026;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        background-color: #00f;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav div {
+        display: flex;
+      }
+
+      nav a {
+        padding: 1em;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+    </style>
   </head>
 
   <body>
@@ -23,19 +75,27 @@
     -->
 
     <nav id="navbar">
-      <a href="#welcome-section">link</a>
-      <a
-        id="profile-link"
-        href="https://github.com/ammarkandel"
-        target="_blank"
-      ></a>
+      <div>
+        <a href="#welcome-section">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a
+          id="profile-link"
+          href="https://github.com/ammarkandel"
+          target="_blank"
+        >Github</a>
+      </div>
     </nav>
     <section id="welcome-section">
-      <h1>Text here</h1>
+      <h1>My Portfolio</h1>
     </section>
     <section id="projects">
       <div class="project-tile"></div>
       <a href="">project</a>
+    </section>
+    <section id="contact">
+      <div class="project-tile"></div>
+      <a href="">contact</a>
     </section>
 
     <script src="js/index.js"></script>
